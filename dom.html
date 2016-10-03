@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>abc	</title>
+	</head>
+	<body>
+		<form name ='form1'>
+			<input type='text' value='123' name ='text' id ='id1'>
+			<input type ='submit' value='submit'>
+		</form>
+		<div id ='content'>
+			<p style='color:red' id='the p'>DOM HTML</p>
+			<a href='facebook.com' id='facebook'>facebook</a>
+		</div>
+
+		<input type ='text' name = 'text1'>
+		<script type="text/javascript">		
+				console.log(document.getElementById('id1').value);
+				document.getElementById('id1').value ='456';
+				console.log(document.getElementById('content').innerHTML);
+				document.getElementById('the p').style.color = 'blue';	
+				console.log(window.innerHeight);
+				console.log(window.innerWidth);
+				console.log(document.body.clientHeight);
+				console.log(screen.width);
+				window.alert('hello')
+			</script>	
+	</body>
+</html>
