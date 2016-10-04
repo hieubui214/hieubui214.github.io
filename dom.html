@@ -6,14 +6,11 @@
 </head>
 <body>
 	<button onclick="openimage()">Open Images</button>
-	<button onclick="closeImage()">Close Images</button>
-	<button onclick="reload()">Refesh</button>
+	<div id="img"></div>
 	<script type="text/javascript" >
 		function openimage(){
-			window.location.href = "img.html";
-		}
-		function reload(){
-			window.location.reload();
+			 history.pushState({},"","img.jpg");
+			 document.getElementById('img').innerHTML = '<img src="img.jpg" alt="">';
 		}
 	</script>
 </body>
