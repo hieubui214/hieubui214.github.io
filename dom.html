@@ -6,8 +6,8 @@
 </head>
 <body>
 	<button onclick="openimage()">Open Images</button>
-	<button onclick="closeimage()">Open Images</button>
-	<button onclick="refesh()">Open Images</button>
+	<button onclick="closeimage()">Close Images</button>
+	<button onclick="refesh()">Refesh</button>
 	<div id="img"></div>
 	<script type="text/javascript" >
 		function openimage(){
@@ -15,7 +15,7 @@
 			 document.getElementById('img').innerHTML = '<img src="img.jpg" alt="">';
 		}
 		function closeimage(){
-			window.history.back();
+			window.location.href = 'dom.html';
 		}
 		function refesh(){
 			window.location.reload();
